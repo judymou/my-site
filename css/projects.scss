@@ -19,6 +19,52 @@
 
 .project-link {
   border-bottom: none;
+  width: 100%;
+  background-color: #fff;
+  display: flex;
+  height: 250px;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+.project-image {
+  width: 48%;
+  height: 100%;
+}
+
+.project-image img {
+  width: 100%;
+  height: 100%;
+}
+
+.project-content {
+  padding: 1em 2em 0.1em 2em;
+  width: 52%;
+}
+
+.project-button {
+  background-color: transparent;
+  box-shadow: inset 0 0 0 2px #51BAA4;
+  color: #51BAA4 !important;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  border-radius: 2.5em;
+  border: 0;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 700;
+  height: 2.85em;
+  line-height: 2.95em;
+  min-width: 6em;
+  padding: 0 1.5em;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+ul.actions {
+  padding-left: 0;
+  padding-top: 68px;
 }
 
 .project {

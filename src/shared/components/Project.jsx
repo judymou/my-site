@@ -28,6 +28,7 @@ export default React.createClass({
     }
 
     return (
+      /*
       <a className="project-link"
           href={this.props.data.url}>
         <div className="project flex-item-default"
@@ -38,6 +39,21 @@ export default React.createClass({
           <div className="desc">{this.props.data.desc}</div>
         </div>
       </a>
+      */
+      <div className="project-link"
+          href={this.props.data.url}>
+        <span className="project-image">
+          <img src={this.props.data.imgurl}>
+          </img>
+        </span>
+        <div className="project-content">
+          <h2>{this.props.data.title}</h2>
+          <p>{this.props.data.desc}</p>
+          <ul className="actions">
+              <div className="project-button">More</div>
+          </ul>
+        </div>
+      </div>
     );
   },
   onMouseOver(event) {
