@@ -40,7 +40,7 @@ export default React.createClass({
         </div>
       </a>
       */
-      <div className="project-link"
+      <div className="feature left"
           href={this.props.data.url}>
         <span className="project-image">
           <img src={this.props.data.imgurl}>

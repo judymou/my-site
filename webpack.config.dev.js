@@ -33,7 +33,11 @@ module.exports = {
         loader: ExtractTextPlugin.extract(
           'style', 'css!sass!autoprefixer?browsers=last 2 versions'
         ),
-        exclude: /node_modules/,
+        exclude: ["/node_modules/"],
+      },
+      {
+        test: /\.(png|jpg|gif)$/,
+        loader: require.resolve("file-loader") + "?name=../[path][name].[ext]"
       },
     ]
   }

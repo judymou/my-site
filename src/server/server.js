@@ -46,11 +46,8 @@ app.get('/talks', reactRouter);
 app.get('/press', reactRouter);
 app.get('/hackathons', reactRouter);
 
-if (isProduction) {
-  app.use(express.static('/home/ian/ianww.com'));
-} else {
-  app.use(express.static(path.join(__dirname, '../../')));
-}
+app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, '../..')));
 
 var server = app.listen(isProduction ? process.env.PORT || 3456 : 3000, function() {
   var host = server.address().address;
