@@ -32,18 +32,11 @@ export default React.createClass({
     });
 
     return (
-      <div>
-        <div className="project-list flex-container">
+      <section className="wrapper style1">
+        <div className="inner">
           {projects}
         </div>
-        <div className="text-project-list generic-list">
-          <h3>Other projects</h3>
-          <ul>
-          {textProjects}
-          </ul>
-        </div>
-        <PostList/>
-      </div>
+      </section>
     );
   },
 })
