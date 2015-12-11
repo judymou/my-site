@@ -5,7 +5,8 @@ import ProjectList from './ProjectList'
 import { Link, RouteHandler } from 'react-router'
 
 if (typeof window === undefined) {
-  require('../../../css/nav.scss')
+  //require('../../../css/nav.scss')
+  require('../../../public/assets/sass/intro.scss')
 }
 
 export default class App extends React.Component {

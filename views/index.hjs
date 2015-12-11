@@ -8,6 +8,31 @@
     <link rel="stylesheet" href="/build/app.css" />
   </head>
   <body>
+    <nav id="nav">
+      <ul class="container">
+        <li><a href="#top">Top</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="wrapper style1 first">
+      <article class="container" id="top">
+        <div class="row">
+          <div class="4u 12u(mobile)">
+            <span class="image fit"><img src="http://i.imgur.com/8Pc8waM.jpg" alt=""></span>
+          </div>
+          <div class="8u 12u(mobile)">
+            <header>
+              <h1>Hi. I'm <strong>Judy Mou</strong>.</h1>
+            </header>
+            <p>I'm a software engineer at Google, where i work mostly on search and travel related stuff.  Before Google, I completed my undergrad and masters at Caltech.</p>
+            <a href="#work" class="button big scrolly">Learn about what I do</a>
+          </div>
+        </div>
+      </article>
+    </div>
+    <!--
     <div id="header">
       <div class="header-image">
         <img src="http://i.imgur.com/8Pc8waM.jpg">
@@ -30,6 +55,7 @@
         <p>I'm a software engineer at Google, where i work mostly on search and travel related stuff. Before Google, I completel my undergrad and masters at Caltech.</p>
       </div>
     </div>
+    -->
     <hr/>
     <div id="content">
       {{{content}}}
