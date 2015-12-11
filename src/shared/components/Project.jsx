@@ -40,20 +40,21 @@ export default React.createClass({
         </div>
       </a>
       */
-      <div className="feature left"
-          href={this.props.data.url}>
-        <span className="project-image">
+      <article className="feature left">
+        <span className="image">
           <img src={this.props.data.imgurl}>
           </img>
         </span>
-        <div className="project-content">
+        <div className="content">
           <h2>{this.props.data.title}</h2>
           <p>{this.props.data.desc}</p>
           <ul className="actions">
-              <div className="project-button">More</div>
+            <li>
+              <a href={this.props.data.url} className="button alt">More</a>
+            </li>
           </ul>
         </div>
-      </div>
+      </article>
     );
   },
   onMouseOver(event) {
